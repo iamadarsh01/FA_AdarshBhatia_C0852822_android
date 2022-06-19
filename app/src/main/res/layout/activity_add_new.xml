@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:orientation="vertical"
+    tools:context=".AddNew">
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_height="451dp" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="PLACE NAME" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ADDRESS"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/textView"/>
+
+            <EditText
+                android:id="@+id/et_plname"
+                android:layout_width="255dp"
+                android:layout_height="44dp"
+                android:ems="10"
+                android:hint="Place Name"
+                android:inputType="textPersonName"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/textView"/>
+
+            <EditText
+                android:id="@+id/et_address"
+                android:layout_width="267dp"
+                android:layout_height="46dp"
+                android:ems="10"
+                android:hint="Address"
+                android:inputType="textPersonName"
+                android:layout_toRightOf="@+id/textView2"
+                android:layout_below="@+id/et_plname"
+                android:layout_marginLeft="40dp"/>
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_address"
+                android:layout_marginLeft="20dp"
+                android:text="visited" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_address"
+                android:layout_centerHorizontal="true"
+                android:text="ADD PLACE" />
+
+
+            <Button
+                android:id="@+id/bt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/checkBox"
+                android:text="NORMAL" />
+
+            <Button
+                android:id="@+id/bt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/checkBox"
+                android:layout_toRightOf="@+id/bt1"
+                android:layout_marginLeft="40dp"
+                android:text="TERRAIN" />
+
+            <Button
+                android:id="@+id/bt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bt1"
+                android:text="SATELLITE" />
+
+            <Button
+                android:id="@+id/bt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bt2"
+                android:layout_toRightOf="@+id/bt1"
+                android:layout_marginLeft="40dp"
+                android:text="HYBRID" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</LinearLayout>

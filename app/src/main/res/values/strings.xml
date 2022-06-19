@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FA_AdarshBhatia_C0852822</string>
+    <string name="apikey">AIzaSyCx8EPbn-_-jTpHJGyqArrqMPfYK2ushVU</string>
+    <string name="title_activity_maps">FavPlace</string>
+    <string name="a">Visited Places</string>
+    <string name="b">To Visit PLaces</string>
+</resources>
